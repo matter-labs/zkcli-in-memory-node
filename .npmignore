@@ -1,9 +1,12 @@
 # Ignore everything
 *
 
-# Include specific files
-!bin/**/*
-!.env-public-analytics
+# Build
+!dist/**/*
+!Dockerfile
+!docker-compose.yml
+
+# Source
 !package.json
 !package-lock.json
 !LICENSE-MIT
