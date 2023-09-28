@@ -4,10 +4,13 @@ import { ModuleNode, files, docker } from "zksync-cli/lib";
 
 import type { ConfigHandler } from "zksync-cli/lib";
 
-let latestVersion: string | undefined;
 type ModuleConfig = {
   version?: string;
 };
+
+let latestVersion: string | undefined;
+
+const REPO_URL = "matter-labs/era-test-node";
 
 export default class SetupModule extends ModuleNode<ModuleConfig> {
   constructor(config: ConfigHandler) {
@@ -71,7 +74,7 @@ export default class SetupModule extends ModuleNode<ModuleConfig> {
     if (latestVersion) {
       return latestVersion;
     }
-    const apiUrl = "https://api.github.com/repos/matter-labs/era-test-node/releases/latest";
+    const apiUrl = `https://api.github.com/repos/${REPO_URL}/releases/latest`;
     try {
       const response = await fetch(apiUrl);
       if (!response.ok) {
