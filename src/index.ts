@@ -67,6 +67,10 @@ export default class SetupModule extends ModuleNode<ModuleConfig> {
     ];
   }
 
+  async getLogs() {
+    return await docker.compose.logs(this.composeFile);
+  }
+
   get version() {
     return this.moduleConfig.version?.toString() ?? undefined;
   }
