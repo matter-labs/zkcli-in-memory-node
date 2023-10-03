@@ -1,5 +1,5 @@
 {
-  "name": "zkcli-in-memory-node-test",
+  "name": "zkcli-in-memory-node",
   "type": "module",
   "version": "0.0.0-development",
   "description": "zkSync In-memory node module for zkcli",
