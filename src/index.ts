@@ -29,7 +29,7 @@ export default class SetupModule extends ModuleNode<ModuleConfig> {
     return {
       l2: {
         chainId: 260,
-        rpcUrl: "http://localhost:8011",
+        rpcUrl: "http://127.0.0.1:8011",
       },
     };
   }
