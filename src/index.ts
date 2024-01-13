@@ -27,10 +27,10 @@ export default class SetupModule extends ModuleNode<ModuleConfig> {
 
   get nodeInfo() {
     return {
-      l2: {
-        chainId: 260,
-        rpcUrl: "http://127.0.0.1:8011",
-      },
+      id: 260,
+      name: "In-memory local node",
+      network: "in-memory-node",
+      rpcUrl: "http://127.0.0.1:8011",
     };
   }
 
@@ -58,8 +58,8 @@ export default class SetupModule extends ModuleNode<ModuleConfig> {
       {
         text: "zkSync Node (L2):",
         list: [
-          `Chain ID: ${this.nodeInfo.l2.chainId}`,
-          `RPC URL: ${this.nodeInfo.l2.rpcUrl}`,
+          `Chain ID: ${this.nodeInfo.id}`,
+          `RPC URL: ${this.nodeInfo.rpcUrl}`,
           "Rich accounts: https://era.zksync.io/docs/tools/testing/era-test-node.html#use-pre-configured-rich-wallets",
         ],
       },
