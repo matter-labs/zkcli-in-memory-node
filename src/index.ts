@@ -60,7 +60,7 @@ export default class SetupModule extends ModuleNode<ModuleConfig> {
         list: [
           `Chain ID: ${this.nodeInfo.id}`,
           `RPC URL: ${this.nodeInfo.rpcUrl}`,
-          "Rich accounts: https://era.zksync.io/docs/tools/testing/era-test-node.html#use-pre-configured-rich-wallets",
+          "Rich accounts: https://docs.zksync.io/build/test-and-debug/in-memory-node#pre-configured-rich-wallets",
         ],
       },
       chalk.yellow("Note: every restart will necessitate a reset of MetaMask's cached account data"),
