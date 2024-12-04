@@ -10,7 +10,7 @@ type ModuleConfig = {
 
 let latestVersion: string | undefined;
 
-const REPO_URL = "matter-labs/era-test-node";
+const REPO_URL = "matter-labs/anvil-zksync";
 
 export default class SetupModule extends ModuleNode<ModuleConfig> {
   constructor(config: ConfigHandler) {
@@ -56,7 +56,7 @@ export default class SetupModule extends ModuleNode<ModuleConfig> {
   getStartupInfo() {
     return [
       {
-        text: "zkSync Node (L2):",
+        text: "ZKsync Node (L2):",
         list: [
           `Chain ID: ${this.nodeInfo.id}`,
           `RPC URL: ${this.nodeInfo.rpcUrl}`,
