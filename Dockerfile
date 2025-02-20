@@ -6,7 +6,7 @@ RUN apt-get update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
-RUN echo "In memory node version: ${LATEST_RELEASE}"
+RUN echo "anvil-zksync version: ${LATEST_RELEASE}"
 
 # Download the release version specified by the build argument
 RUN curl -s echo "https://api.github.com/repos/matter-labs/anvil-zksync/releases/tags/${LATEST_RELEASE}" | \
