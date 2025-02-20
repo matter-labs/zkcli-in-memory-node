@@ -16,7 +16,7 @@ export default class SetupModule extends ModuleNode<ModuleConfig> {
   constructor(config: ConfigHandler) {
     super(
       {
-        name: "In memory node",
+        name: "anvil-zksync",
         description: "Quick startup, no persisted state, only L2 node",
       },
       config
