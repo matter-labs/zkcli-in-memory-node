@@ -28,7 +28,7 @@ export default class SetupModule extends ModuleNode<ModuleConfig> {
   get nodeInfo() {
     return {
       id: 260,
-      name: "In-memory local node",
+      name: "anvil-zksync",
       network: "in-memory-node",
       rpcUrl: "http://127.0.0.1:8011",
     };
@@ -60,7 +60,7 @@ export default class SetupModule extends ModuleNode<ModuleConfig> {
         list: [
           `Chain ID: ${this.nodeInfo.id}`,
           `RPC URL: ${this.nodeInfo.rpcUrl}`,
-          "Rich accounts: https://docs.zksync.io/zksync-era/tooling/local-setup/in-memory-node#pre-configured-rich-wallets",
+          "Rich accounts: https://docs.zksync.io/zksync-era/tooling/local-setup/anvil-zksync-node#pre-configured-rich-wallets",
         ],
       },
       chalk.yellow("Note: every restart will necessitate a reset of MetaMask's cached account data"),
